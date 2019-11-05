@@ -1,0 +1,317 @@
+<!-- layout.njk -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guías de Trámites</title>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700" rel="stylesheet">
+  
+  
+</head>
+<body>
+  
+  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container pl-2">
+
+    <a class="navbar-brand" href="index.html" id="logo">
+      <img src="images/tramites-logo.svg" alt="logo">
+    </a>
+
+    
+
+    <form class="form p-0 m-0" action="lista.html" method="get" id="form">
+      
+      <div class="input-group">
+        <input type="text" name="search" class="form-control form-control-lg" placeholder="Buscar trámites y servicios" aria-label="Buscar trámites y servicios" aria-describedby="button-addon2" id="search" autocomplete="off">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="submit" id="button-addon2">
+            <i class="fas fa-fw fa-lg fa-search"></i>
+          </button>
+        </div>       
+      </div>
+
+      <div class="result invisible" id="result">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Test 1</a>
+          <a href="#" class="list-group-item list-group-item-action">Test 2</a>
+          <a href="#" class="list-group-item list-group-item-action">Test 3</a>
+          <a href="#" class="list-group-item list-group-item-action">Test 4</a>
+        </div>
+      </div>
+
+    </form>
+
+    <a href="#" class="btn btn-blue-gob text-white" id="buttonForm">
+      <i class="fas fa-fw fa-search" id="iconSearch"></i>
+      <i class="fas fa-fw fa-times"  id="iconTimes"></i>
+    </a>
+
+  </div>
+</nav>
+
+
+<section class="tramite">
+  <div class="container">
+
+    <div class="my-4 pb-2 d-none d-sm-block">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="lista.html">Trámites</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Nombre del trámite</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="row">
+
+      <div class="col-12 col-md-8 mb-5">
+
+        <div class="header">
+
+          <h1>Excepteur sint occaecat cupidatat non proident</h1>
+
+          <div class="alert alert-warning">
+            <div class="alert-icon">
+              <i class="fas fa-fw fa-3x fa-exclamation-circle"></i>
+            </div>
+            <div class="alert-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          </div>
+
+          <div class="d-flex actions">
+            <div class="share">
+              <a href="#">
+                <i class="fab fa-fw fa-2x fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-fw fa-2x fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-fw fa-2x fa-envelope"></i>
+              </a>
+            </div>
+            <div class="print">
+              <a href="javascript:window.print();">
+                <i class="fas fa-fw fa-2x fa-print"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <article class="">
+          <h3 class="display-4">En que consiste</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3 class="display-4">Procedimiento</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3 class="display-4">Requisitos</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>
+                <b>Subtitulo</b>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3 class="display-4">Trámites previos necesarios</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </article>
+
+        <article class="card">
+
+          <div class="card-body">
+            <h3 class="display-4">Documentos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="list-text">
+                Texto del documento
+              </div>
+              <div class="list-icon">
+                <a href="#" class="btn btn-light">
+                  <i class="fas fa-download"></i>
+                </a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="list-text">
+                Texto del documento
+              </div>
+              <div class="list-icon">
+                <a href="#" class="btn btn-light">
+                  <i class="fas fa-download"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+        </article>
+
+      </div>
+
+      <div class="col-12 col-md-4 mb-5">
+        <article class="">
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="display-4">Donde se realiza</h3>
+              <h5 class="card-title">Información del Conjunto de Datos</h5>
+              <p>
+                <em>Dirección</em> <br>
+                <b>Lorem ipsum dolor</b>
+              </p>
+              <p>
+                <em>Teléfono</em> <br>
+                <b>012345678</b>
+              </p>
+              <p>
+                <em>E-mail</em> <br>
+                <b>tramite@riocuarto.gov.ar</b>
+              </p>
+              <p>
+                <em>Mapa</em> <br>
+                <div class="">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.4649524240604!2d-64.34798438441989!3d-33.123147580868846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2000c34422b87%3A0xb7a0791e500ec893!2s25+de+Mayo+222%2C+X5800CPH+R%C3%ADo+Cuarto%2C+C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1545323885515" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </p>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="display-4">Horarios de Atención</h3>
+              <h5 class="card-title">De lunes a viernes, de 8 a 12 y de 16:30 a 20:30hs.</h5>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="display-4">Turno</h3>
+              <div class="d-flex alert alert-danger">
+                <div class="alert-icon">
+                  <i class="fas fa-2x fa-exclamation-circle"></i>
+                </div>
+                <div class="alert-message">Se requiere turno previo para realizar el trámite</div>
+              </div>
+              <a href="#" class="btn btn-block btn-green-gob text-white">Solicitar Turno</a>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="display-4">Más Información</h3>
+              <p>
+                <em>Costo</em> <br>
+                <b>Gratuito</b>
+              </p>
+              <p>
+                <em>Duración del trámite</em> <br>
+                <b>Lorem ipsum dolor sit amet.</b>
+              </p>
+              <p>
+                <em>¿Quiénes pueden realizar el trámite?</em> <br>
+                <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b>
+              </p>
+              <p>
+                <em>E-mail</em> <br>
+                <b>tramite@riocuarto.gov.ar</b>
+              </p>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-6 col-md-3 col-lg-2 pt-1 text-center text-sm-left">
+				<a href="http://www.riocuarto.gov.ar/" target="_blank"><img src="images/gobierno-rio-cuarto-logo.svg" alt="" class="img-fluid"></a>
+			</div>
+			<div class="col-6 col-md-3 col-lg-2 col-lg-2 text-center text-sm-left d-block d-md-none">
+				<a href="https://www.facebook.com/gobabiertorioiv/" target="_blank"><img src="images/gob-abierto-modernizacion-logo.svg" alt="" class="img-fluid"></a>
+			</div>
+			<div class="col-12 col-md-6 col-lg-8 text-center mt-2 mt-sm-0">
+					<span class="d-none d-md-block">Desarrollado por Sec. Gobierno Abierto y Modernización. Gobierno de Río Cuarto. <br></span>
+					<i class="fas fa-fw fa-envelope"></i> gobiernoabierto@riocuarto.gov.ar <br>
+					<i class="fas fa-fw fa-phone"></i> (0358) 4671522
+				</div>
+				<div class="col-6 col-md-3 col-lg-2 col-lg-2 text-center text-sm-left d-none d-md-block">
+					<a href="https://www.facebook.com/gobabiertorioiv/" target="_blank"><img src="images/gob-abierto-modernizacion-logo.svg" alt="" class="img-fluid"></a>
+				</div>				
+			</div>
+	</div>
+</footer>
+
+  
+  <!--build:css css/main.min.css -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/app.css">
+  <!-- endbuild -->
+  
+  <!--build:js js/main.min.js -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/app.js"></script>
+  <!-- endbuild -->
+
+  
+  <script type="text/javascript">
+  $(document).ready(function(){    
+    $("input[id=search]").keyup(function(){
+      $("#result").removeClass('invisible');       
+    });
+    $('#result a').click(function() {
+        var value = $(this).text();
+        var input = $('#search');
+        input.val(value);
+        $("#result").addClass('invisible');
+        return false;
+    });
+  });
+</script>
+
+</body>
+</html>

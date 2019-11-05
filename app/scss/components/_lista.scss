@@ -1,0 +1,44 @@
+//
+//
+
+.lista{
+  padding: 30px 0;
+  margin-bottom: 50px;
+
+  .result{
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    span{
+      color: $green-gob;
+      font-weight: 600;
+    }
+  }
+
+  .card{
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .sidebar{
+    .card{
+      border-color: $gray-300;
+    }
+  }
+
+  .content{
+    .card{
+      .card-title{
+        color: $blue-gob;
+      }
+      &:hover{
+        border-color: rgba($blue-gob, 0.4);
+        background-color: rgba($blue-gob, 0.05);
+        .card-title{
+          color: $green-gob;
+        }
+      }
+    }
+  }
+
+}

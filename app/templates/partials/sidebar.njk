@@ -1,0 +1,49 @@
+<div class="col-12 col-md-4 mb-5 sidebar">
+  
+  <div class="card bg-green-gob text-white">
+    <div class="card-body pb-0">
+      <h5 class="card-title text-white">Temas</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <a href="tramite.html">
+          <div>
+            Edecom 
+          </div>
+          <div class="fas fa-fw fa-lg fa-angle-right"></div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="tramite.html">
+          <div>
+            Emos 
+          </div>
+          <div class="fas fa-fw fa-lg fa-angle-right"></div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="tramite.html">
+          <div>
+            Impuestos 
+          </div>
+          <div class="fas fa-fw fa-lg fa-angle-right"></div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-body pb-0">
+      <h5 class="card-title">Más Consultados</h5>
+    </div>
+    {% include "partials/lista-tramites.njk" %}
+  </div>
+
+  <div class="card">
+    <div class="card-body pb-0">
+      <h5 class="card-title">Támites Sugeridos</h5>
+    </div>
+    {% include "partials/lista-tramites.njk" %}
+  </div>
+
+</div>

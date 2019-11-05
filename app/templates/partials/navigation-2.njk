@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container pl-2">
+
+    <a class="navbar-brand" href="index.html" id="logo">
+      <img src="images/tramites-logo.svg" alt="logo">
+    </a>
+
+    
+
+    <form class="form p-0 m-0" action="lista.html" method="get" id="form">
+      
+      <div class="input-group">
+        <input type="text" name="search" class="form-control form-control-lg" placeholder="Buscar trámites y servicios" aria-label="Buscar trámites y servicios" aria-describedby="button-addon2" id="search" autocomplete="off">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="submit" id="button-addon2">
+            <i class="fas fa-fw fa-lg fa-search"></i>
+          </button>
+        </div>       
+      </div>
+
+      <div class="result invisible" id="result">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Test 1</a>
+          <a href="#" class="list-group-item list-group-item-action">Test 2</a>
+          <a href="#" class="list-group-item list-group-item-action">Test 3</a>
+          <a href="#" class="list-group-item list-group-item-action">Test 4</a>
+        </div>
+      </div>
+
+    </form>
+
+    <a href="#" class="btn btn-blue-gob text-white" id="buttonForm">
+      <i class="fas fa-fw fa-search" id="iconSearch"></i>
+      <i class="fas fa-fw fa-times"  id="iconTimes"></i>
+    </a>
+
+  </div>
+</nav>

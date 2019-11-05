@@ -1,0 +1,54 @@
+//
+// Navbar
+
+.navbar{
+  height: 80px;
+  position: relative;
+  .navbar-brand{
+    width: 160px;
+  }
+
+  #form{
+    width: 50%;
+    position: relative;
+
+    .result{
+      position: absolute;
+      width: 100%;
+      z-index: 99;
+    }
+  }
+
+  #buttonForm{
+    display: none;
+  }
+}
+
+@media (max-width: 360px){
+  .navbar{
+    .input-group{
+      input{
+        max-width: 180px;
+      }
+    }
+  }
+}
+@media (max-width: 767px){
+  .navbar{
+    .navbar-nav{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .navbar{
+    #form{
+      width: 80%;
+      display: none;
+    }
+    #buttonForm{
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<!-- index.njk -->
+{% extends "layout.njk" %}
+
+{% block content %}
+
+{% include "partials/navigation-2.njk" %}
+
+<section class="lista">
+  <div class="container">
+
+    <div class="my-4 pb-2 d-none d-sm-block">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Trámites</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-8 content">
+
+        <div class="result">
+          Se encontraron <span>19</span> resultados para <span>"texto ingresado"</span>
+        </div>
+
+        {% for item in range(1, 5) %}        
+          {% include "partials/tramite.njk" %}
+        {% endfor %}
+
+        <div class="mb-5 pt-4">
+          {% include "partials/pagination.njk" %}
+        </div>
+
+      </div>
+
+      {% include "partials/sidebar.njk" %}
+      
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

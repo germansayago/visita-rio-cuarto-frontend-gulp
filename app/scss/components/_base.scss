@@ -1,0 +1,20 @@
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  background-color: white;
+  color: darken($gray-100, 70%);
+  margin-bottom: 80px;
+}
+
+h1{
+  font-family: 'Bree Serif';
+}
+
+@media (max-width: 767px){
+  body{
+    margin-bottom: 120px;
+  }
+}
