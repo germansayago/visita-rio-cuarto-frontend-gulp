@@ -5,8 +5,7 @@
   .page-item{
     &.active{
       .page-link{
-        border-color: $green-gob;
-        background-color: $green-gob;
+        background-color: red;
       }
     }
   }

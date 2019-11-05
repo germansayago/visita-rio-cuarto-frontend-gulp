@@ -1,105 +1,13 @@
-<!-- index.njk -->
 {% extends "layout.njk" %}
 
 {% block content %}
-
-{% include "partials/navigation-1.njk" %}
-
-<div class="bg-light masterhead">
-  <div class="container py-5">
-    <form class="text-center" action="lista.html" method="get">
-      <div class="row justify-content-center">
-        
-        <div class="col-12 col-md-8">
-
-          <h1 class="mb-4 wow fadeInDown" data-wow-delay="0.3s">¿Qué estás buscando?</h1>
-          
-          <div class="input-group mb-1 wow fadeInUp" data-wow-delay="0.5s">
-            <input type="text" name="search" class="form-control form-control-lg" placeholder="Buscar trámites y servicios" aria-label="Buscar trámites y servicios" aria-describedby="button-addon2" id="search" autocomplete="off">
-            <div class="input-group-append">
-              <button class="btn btn-secondary" type="submit" id="button-addon2">
-                <i class="fas fa-fw fa-lg fa-search"></i>
-              </button>
-            </div>       
-          </div>
-
-          <div class="result invisible" id="result">
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action">Test 1</a>
-              <a href="#" class="list-group-item list-group-item-action">Test 2</a>
-              <a href="#" class="list-group-item list-group-item-action">Test 3</a>
-              <a href="#" class="list-group-item list-group-item-action">Test 4</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </form>
-  </div>
-</div>
-
-<section class="py-5 position-relative">
-  <div class="container">
+  {% include "components/hero.njk" %}
+  <div class="container home">
+      <h1 class="display-4">eventos recomendados</h1>
     <div class="row">
-
-      <div class="col-12 col-md-4 col-lg-2">
-        <div class="card bg-green-gob text-white">
-          <div class="card-body pb-0">
-            <h5 class="card-title text-white">Temas</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <a href="tramite.html">
-                <div>
-                  Edecom 
-                </div>
-                <div class="fas fa-fw fa-lg fa-angle-right"></div>
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="tramite.html">
-                <div>
-                  Emos 
-                </div>
-                <div class="fas fa-fw fa-lg fa-angle-right"></div>
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="tramite.html">
-                <div>
-                  Impuestos 
-                </div>
-                <div class="fas fa-fw fa-lg fa-angle-right"></div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4 col-lg-5">
-        <div class="card">
-          <div class="card-body pb-0">
-            <h5 class="card-title">Más Consultados</h5>
-          </div>
-          {% include "partials/lista-tramites.njk" %}
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4 col-lg-5">
-        <div class="card">
-          <div class="card-body pb-0">
-            <h5 class="card-title">Trámites Sugeridos</h5>
-          </div>
-          {% include "partials/lista-tramites.njk" %}
-        </div>
-      </div>
+      {% for i in range(1,9) %}
+        {% include('components/event-card.njk') %}
+      {% endfor %}
     </div>
   </div>
-</section>
-
-{% endblock %}
-
-{% block js %}
-
 {% endblock %}
