@@ -1,0 +1,33 @@
+//
+// card
+
+.card{
+  margin-bottom: 30px;
+  .card-header{
+    // padding: 4px 12px;
+    background-color: #fff;
+    .date{
+      color: $branding;
+    }
+  }
+  .card-body{
+    .card-title{
+      margin-bottom: 10px;
+    }
+    .card-subtitle{}
+    .card-text{}
+  }
+  .card-footer{
+    background-color: #fff;
+    font-size: 0.8rem;
+  }
+  .card-image{
+    height: 150px;
+    background: url('../images/no-image.jpg');
+
+    -ms-background-position-x: center;
+    -ms-background-position-y: center;
+          background-position: center center;
+              background-size: cover;
+  }
+}

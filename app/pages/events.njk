@@ -1,11 +1,13 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-  <div class="container py-5">
-    <h1 class="display-4">eventos</h1>
+  <div class="container events">
+    <h1 class="display-4">proximos eventos</h1>
     <div class="row">      
-      {% for i in range(1,13) %}
+      {% for i in range(1,9) %}
+      <div class="col-md-6 col-lg-4 col-xl-3">
         {% include('components/event-card.njk') %}
+      </div>
       {% endfor %}
     </div>
     {% include('components/pagination.njk') %}

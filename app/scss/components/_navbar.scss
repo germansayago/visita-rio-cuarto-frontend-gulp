@@ -1,0 +1,24 @@
+// 
+// navbar
+
+.navbar{
+  padding: 16px 0;
+  background-color: transparent;
+  .navbar-brand{
+    img{
+      height: 46px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar{
+    padding: 15px;
+    background-color: transparent;
+    .navbar-brand{
+      img{
+        height: 46px;
+      }
+    }
+  }
+}

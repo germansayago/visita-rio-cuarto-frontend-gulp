@@ -7,9 +7,12 @@
 // @import "components/event";
 
 // componentes
-// @import "components/header";
-// @import "components/footer";
-// @import "components/container";
-// @import "components/cards";
-// @import "components/hero";
+@import "components/base";
+@import "components/navbar";
+@import "components/footer";
+@import "components/hero";
+@import "components/card";
 @import "components/pagination";
+
+@import "components/event";
+

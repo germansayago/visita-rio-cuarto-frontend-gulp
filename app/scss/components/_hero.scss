@@ -1,0 +1,36 @@
+//
+// hero
+.hero{
+  background-color: $branding;
+  height: 450px;
+  text-align: center;
+  background: url('../images/hero-background-1.jpg');
+  background-size: cover;
+  background-position: bottom center;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btn{
+    text-transform: uppercase;
+  }
+
+  .dropdown{
+    .dropdown-menu{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero{
+    height: 200px;
+    .btn{
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+  }
+}
